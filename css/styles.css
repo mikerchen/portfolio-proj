@@ -29,3 +29,7 @@ html, body {
     pointer-events: none;
     color: #aaa;
 }
+
+.carousel-caption {
+    background-color: rgba(46, 49, 49, .50)
+}

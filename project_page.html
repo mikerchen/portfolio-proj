@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Project Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <a class="navbar brand" href="#"><img src="img/placeholder-logo.png" height="30"></a>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-sm navbar-light sticky-top ">
+                        <div class="container">
+                             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                                 <span class="navbar-toggler-icon"></span>
+                             </button>
+                             <div class="collapse navbar-collapse" id="nucampNavbar">
+                                  <ul class="navbar-nav ml-auto">
+                                      <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="aboutus.html"> Log In</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="#"> Sign Up</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="contactus.html"> Create a Project</a></li>
+                                  </ul>
+                                  <span class="navbar-text">
+                                      <a role="button" data-toggle="modal" data-target="#loginModal">
+                                          Login
+                                      </a>
+                                  </span>
+                             </div>
+                        </div>
+                     </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Project Title</h1>
+                <div class="card">
+                    <h5 class="card-header">Project Description</h5>
+                    <div class="card-body">
+                      <p class="card-text"> <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                           non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                           deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                           elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                           in culpa qui officia deserunt mollit anim id est laborum."</p></p>
+                    </div>
+                  </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">Languages</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">HTML</li>
+                        <li class="list-group-item">CSS</li>
+                      </ul>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">Years of Experience</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1-5 years</li>
+                      </ul>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">Weekly Time Commitment</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">&lt;5 hours</li>
+                      </ul>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">Project Images</h5>    
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/html.jpg" class="d-block w-100" height="400" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>HTML</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/js.jpg" class="d-block w-100" height="400" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Javascript</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/css.jpg" class="d-block w-100" height="400" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>CSS</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-4">
+                <div class="card text-center mt-5">
+                    <h5 class="card-header text-left">Project Owner</h5>
+                    <div class="card-body">
+                        <img src="img/mike.jpg" class="img-fluid rounded-circle" width="200" alt="Project-Owner">
+                        <h5 class="mt-3 card-title">Michael Chen</h5>
+                        <a href="#" class="text-decoration-none">@mikerchen</a>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">Project Team</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-inline align-middle project-member">
+                                <h5 class="d-inline">1.</h5>
+                                <a href="#" class="text-decoration-none">
+                                    <img src="img/brian.png" width="30" class="img-fluid rounded-circle" alt="">
+                                    <span class="d-inline ml-1">Brian Jun</span>
+                                </a>
+                            <div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-inline align-middle project-member">
+                                <h5 class="d-inline">2.</h5>
+                                <span class="d-inline"> Open</span>
+                                <button class="btn btn-success ml-2">Join Team</button>
+                            <div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-inline align-middle project-member">
+                                <h5 class="d-inline">3.</h5>
+                                <span class="d-inline"> Open</span>
+                                <button class="btn btn-success ml-2">Join Team</button>
+                            <div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="brand" href="#"><img class="d-block mx-auto" src="img/placeholder-logo.png" height="30"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
