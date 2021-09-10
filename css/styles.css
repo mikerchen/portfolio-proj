@@ -29,3 +29,7 @@ html, body {
     pointer-events: none;
     color: #aaa;
 }
+
+#row-search {
+    height: 100%;
+}
