@@ -37,3 +37,13 @@ html, body {
 .project-owner {
     margin-top: 55px
 }
+
+.search-bar, .search-filters {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.search-cards {
+    width: 100%;
+    margin: auto;
+}
