@@ -39,8 +39,7 @@ html, body {
 }
 
 .search-bar, .search-filters {
-    width: 60%;
-    margin-left: 5%;
+    width: 80%;
 }
 
 .search-cards {

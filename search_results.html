@@ -22,25 +22,20 @@
                 <div class="col-2">
                     <a class="navbar brand" href="#"><img src="img/placeholder-logo.png" height="30"></a>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-2"></div>
                 <div class="col">
-                    <nav class="navbar navbar-expand-sm navbar-light sticky-top ">
+                    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
                         <div class="container">
                              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                                  <span class="navbar-toggler-icon"></span>
                              </button>
                              <div class="collapse navbar-collapse" id="nucampNavbar">
-                                  <ul class="navbar-nav ml-auto">
-                                      <li class="nav-item active"><a class="nav-link" href="#"> Home</a></li>
+                                  <ul class="navbar-nav ml-auto text-right">
+                                      <li class="nav-item active"><a class="nav-link" href="index.html"> Home</a></li>
                                       <li class="nav-item"><a class="nav-link" href="#"> Log In</a></li>
                                       <li class="nav-item"><a class="nav-link" href="#"> Sign Up</a></li>
                                       <li class="nav-item"><a class="nav-link" href="create_a_project.html"> Create a Project</a></li>
                                   </ul>
-                                  <span class="navbar-text">
-                                      <a role="button" data-toggle="modal" data-target="#loginModal">
-                                          Login
-                                      </a>
-                                  </span>
                              </div>
                         </div>
                      </nav>
@@ -52,7 +47,7 @@
     <div class="container-fluid">
         <div class="search-bar">
             <div class="row">
-                <div class="col-10">
+                <div class="col-5 col-lg-10">
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback"></span>
                         <input type="text" class="form-control" placeholder="Search">
@@ -65,174 +60,201 @@
         </div>
         <div class="search-filters">
             <div class="row">
-                <div class="col">
-                    <label class="col-form-label" for="projCategory">Project Category</label>
-                    <select name="projCategory" id="projCategory" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <label class="col-form-label" for="languages">Languages</label>
-                    <select name="languages" id="languages" class="form-control">
-                        <option value="1">HTML</option>
-                        <option value="2">CSS</option>
-                        <option value="3">JS</option>
-                        <option value="4">Python</option>
-                        <option value="5">C</option>
-                        <option value="6">C#</option>
-                        <option value="6">C++</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <label class="col-form-label" for="yearsOfExp">Years of Exp</label>
-                    <select name="yearsOfExp" id="yearsOfExp" class="form-control">
-                        <option value="1">&lt;1 year</option>
-                        <option value="2">1-3 years</option>
-                        <option value="3">3-5 years</option>
-                        <option value="4">5-10 years</option>
-                        <option value="5">10+ years</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <label class="col-form-label" for="timeCommit">Weekly Time Commit</label>
-                    <select name="timeCommit" id="timeCommit" class="form-control">
-                        <option value="1">&lt;5 hours</option>
-                        <option value="2">5-10 hours</option>
-                        <option value="3">10-20 hours</option>
-                        <option value="4">20-40 hours</option>
-                        <option value="5">40+ hours</option>
-                    </select>
+                <div class="col pl-0">
+                    <nav class="navbar navbar-expand-lg navbar-light pl-4 pl-lg-0">
+                        <div class="container pl-0 mx-0">
+                            <button class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-target="#filter">
+                                <span class="fa fa-filter"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="filter">
+                                <div class="col">
+                                    <label class="col-form-label" for="projCategory">Project Category</label>
+                                    <select name="projCategory" id="projCategory" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label class="col-form-label" for="languages">Languages</label>
+                                    <select name="languages" id="languages" class="form-control">
+                                        <option value="1">HTML</option>
+                                        <option value="2">CSS</option>
+                                        <option value="3">JS</option>
+                                        <option value="4">Python</option>
+                                        <option value="5">C</option>
+                                        <option value="6">C#</option>
+                                        <option value="6">C++</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label class="col-form-label" for="yearsOfExp">Years of Exp</label>
+                                    <select name="yearsOfExp" id="yearsOfExp" class="form-control">
+                                        <option value="1">&lt;1 year</option>
+                                        <option value="2">1-3 years</option>
+                                        <option value="3">3-5 years</option>
+                                        <option value="4">5-10 years</option>
+                                        <option value="5">10+ years</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label class="col-form-label" for="timeCommit">Weekly Time Commit</label>
+                                    <select name="timeCommit" id="timeCommit" class="form-control">
+                                        <option value="1">&lt;5 hours</option>
+                                        <option value="2">5-10 hours</option>
+                                        <option value="3">10-20 hours</option>
+                                        <option value="4">20-40 hours</option>
+                                        <option value="5">40+ hours</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container search-cards">
-        <div class="row row-cols-4 mt-4">
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="container-fluid search-cards px-5">
+        <div class="row row-cols-1 row-cols-lg-4 mt-4">
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill btn bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                  </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-decoration-none text-dark" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Front-End</span>
+                            <span class="badge rounded-pill bg-secondary">Javascript</span>
+                            <span class="badge rounded-pill bg-secondary">3-5 years</span>
+                            <span class="badge rounded-pill bg-secondary">5 hr per week</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Front-End</span>
-                        <span class="badge rounded-pill bg-secondary">Javascript</span>
-                        <span class="badge rounded-pill bg-secondary">3-5 years</span>
-                        <span class="badge rounded-pill bg-secondary">5 hr per week</span>
-                    </div>
-                  </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                  </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                  </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                  </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/placeholder-img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body pb-0">
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col mb-4 px-2">
+                <a class="text-reset text-decoration-none" href="project_page.html">
+                    <div class="card">
+                        <img src="img/placeholder-img.jpg" class="card-img-top d-none d-lg-block" alt="...">
+                        <div class="card-body pb-0">
+                          <h5 class="card-title">Title</h5>
+                          <p class="card-text">Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="card-body text-center pt-0">
+                            <span class="badge rounded-pill bg-secondary">Category</span>
+                            <span class="badge rounded-pill bg-secondary">Language</span>
+                            <span class="badge rounded-pill bg-secondary">Years of Experience</span>
+                            <span class="badge rounded-pill bg-secondary">Time</span>
+                        </div>
                     </div>
-                    <div class="card-body text-center pt-0">
-                        <span class="badge rounded-pill bg-secondary">Category</span>
-                        <span class="badge rounded-pill bg-secondary">Language</span>
-                        <span class="badge rounded-pill bg-secondary">Years of Experience</span>
-                        <span class="badge rounded-pill bg-secondary">Time</span>
-                    </div>
-                  </div>
+                </a>
             </div>
         </div>
     </div>
