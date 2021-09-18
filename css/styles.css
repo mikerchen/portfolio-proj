@@ -33,3 +33,16 @@ html, body {
 .carousel-caption {
     background-color: rgba(46, 49, 49, .50)
 }
+
+.project-owner {
+    margin-top: 55px
+}
+
+.search-bar, .search-filters {
+    width: 80%;
+}
+
+.search-cards {
+    width: 100%;
+    margin: auto;
+}
