@@ -1,8 +1,7 @@
 html, body {
     height: 100%;
-    background-image: url('../img/homepage-bg.png');
+    /* background-image: url('../img/homepage-bg.png'); */
     font-family:'Source Sans Pro', sans-serif;
-
 }
 
 .fill {
@@ -57,12 +56,20 @@ html, body {
 }
 
 .navigation {
-    background-color: rgba(215, 206, 199, 1);
+    background-color:rgba(124, 219, 213, 1);
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
 
 .site-footer {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(214, 237, 236, 1);
     padding-top: 20px;
+}
+
+.card {
+    background-color: rgba(124, 219, 213, .5);
+}
+
+.badge {
+    background-color: rgba(249, 184, 2);
 }
