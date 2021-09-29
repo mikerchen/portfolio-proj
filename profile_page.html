@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+    <title>Bootstrap Portolio Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid navigation">
+            <div class="row">
+                <div class="col-2 d-flex align-items-center">
+                    <a class="navbar brand" href="#"><img src="img/placeholder-logo.png" height="30"></a>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+                        <div class="container">
+                             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                                 <span class="navbar-toggler-icon"></span>
+                             </button>
+                             <div class="collapse navbar-collapse" id="nucampNavbar">
+                                  <ul class="navbar-nav ml-auto text-right">
+                                      <li class="nav-item active"><a class="nav-link" href="#"> Home</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="#"> Explore</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="create_a_project.html"> Create a Project</a></li>
+                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/mike.jpg" width="30" class="rounded-circle"> <span class="badge badge-success">4</span></a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+                                                <a class="dropdown-item" href="#">Profile</a>
+                                                <a class="dropdown-item" href="#">My Projects</a>
+                                                <a class="dropdown-item" href="#">Messages <span class="badge badge-success">4</span></a>
+                                                <a class="dropdown-item" href="#">Preferences</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Log Out</a>
+                                            </div>
+                                      </li>
+                                  </ul>
+                             </div>
+                        </div>
+                     </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid mt-5 pl-5">
+        <div class="row">
+            <div class="col-8">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-3">
+                            <img src="img/mike.jpg" class="img-fluid rounded-circle" width="300" alt="profile-image">
+                        </div>
+                        <div class="col text-left">
+                            <h1 style="font-size: 60px">Michael Chen</h1>
+                            </a><h2 style="font-size: 40px">@mikerchen</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    
+
+    <footer class="site-footer d-flex h-25">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="create-a-project.html">Create a Project</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="brand" href="#"><img class="d-block mx-auto" src="img/placeholder-logo.png" height="30"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
